@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portfolio-la';
+  theme: 'dark' | 'light' = 'dark';
+
+  getTheme(selectedTheme: boolean) {
+    if (selectedTheme) {
+      this.theme = 'dark';
+    } else {
+      this.theme = 'light';
+    }
+  }
 }
