@@ -1,0 +1,23 @@
+<div class="flex items-start justify-start rounded-md border p-2 shadow md:p-8">
+  <div>
+    <!-- <fa-icon [icon]="faCircle" class="text-lg lg:text-5xl"></fa-icon> -->
+  </div>
+  <div class="box ml-2 w-full md:ml-10">
+    <div class="flex items-center justify-between">
+      <p class="text-bold mb-2 text-base dark:text-slate-200 sm:mb-3 sm:text-lg lg:text-5xl">
+        {{ job.title }}
+      </p>
+      <p class="mb-2 text-base italic dark:text-slate-200 sm:mb-3 sm:text-lg lg:text-4xl">
+        {{ job.startDate | date : "MMM y" }} - {{ job.finishDate | date : "MMM y" }}
+      </p>
+    </div>
+    <div>
+      <p class="mb-2 text-base text-indigo-600 sm:mb-3 sm:text-lg lg:text-4xl">
+        {{ job.company }}
+      </p>
+      <p class="mb-2 text-base dark:text-slate-200 sm:mb-3 sm:text-lg lg:text-4xl">
+        {{ job.location }}
+      </p>
+    </div>
+  </div>
+</div>
