@@ -1,0 +1,24 @@
+<div class="flex items-start justify-start rounded-md border p-2 shadow md:p-8">
+  <div class="box ml-2 w-full md:ml-10">
+    <div class="flex items-center justify-between">
+      <p class="text-bold mb-2 text-base dark:text-slate-200 sm:mb-3 sm:text-lg lg:text-5xl">
+        {{ education.title }}
+      </p>
+      <p class="mb-2 text-base italic dark:text-slate-200 sm:mb-3 sm:text-lg lg:text-4xl">
+        {{ education.startDate | date : "MMM y" }} -
+        {{ education.finishDate | date : "MMM y" }}
+      </p>
+    </div>
+    <div>
+      <p class="mb-2 text-base text-indigo-600 sm:mb-3 sm:text-lg lg:text-4xl">
+        {{ education.university }}
+      </p>
+      <p class="mb-2 text-base dark:text-slate-200 sm:mb-3 sm:text-lg lg:text-4xl">
+        {{ "GPA : " + education.gpa }}
+      </p>
+      <p class="mb-2 text-base dark:text-slate-200 sm:mb-3 sm:text-lg lg:text-4xl">
+        {{ education.location }}
+      </p>
+    </div>
+  </div>
+</div>

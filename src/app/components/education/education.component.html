@@ -1,1 +1,10 @@
-<p>education works!</p>
+<div class="education py-8">
+  <div class="mx-auto mb-12 max-w-sm md:max-w-2xl">
+    <h2 class="text-center text-base font-bold text-gray-900 dark:text-slate-100 md:text-3xl lg:text-6xl">
+      {{ "My Educations" }}
+    </h2>
+  </div>
+  <div class="mb-4 px-6 md:mb-10 lg:px-12" *ngFor="let education of educations">
+    <app-edu [education]="education"></app-edu>
+  </div>
+</div>
