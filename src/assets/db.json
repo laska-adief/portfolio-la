@@ -1,0 +1,55 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "title": "Employee Management",
+      "github": "https://github.com/laska-adief/employee-management",
+      "demo": "https://laska-adief.github.io/employee-management/",
+      "image": ""
+    },
+    {
+      "id": "2",
+      "title": "CV Builder",
+      "github": "https://github.com/laska-adief/cv-builder",
+      "demo": "https://laska-adief.github.io/cv-builder/",
+      "image": ""
+    },
+    {
+      "id": "3",
+      "title": "Todo List",
+      "github": "https://github.com/laska-adief/todolist-angular",
+      "demo": "https://laska-adief.github.io/todolist-angular/",
+      "image": ""
+    },
+    {
+      "id": "4",
+      "title": "Simple Product CRUD",
+      "github": "https://github.com/laska-adief/simple-product-crud",
+      "demo": "https://laska-adief.github.io/simple-product-crud/",
+      "image": ""
+    }
+  ],
+
+  "jobs": [
+    {
+      "id": "1",
+      "title": "Frontend Developer",
+      "company": "Zettabyte Pte. Ltd",
+      "startDate": "2/07/2022",
+      "finishDate": "2/07/2023",
+      "location": "Yogyakarta"
+    }
+  ],
+
+  "educations": [
+    {
+      "id": "1",
+      "title": "Bachelor Informatics",
+      "university": "University of Amikom Yogyakarta",
+      "startDate": "09/07/2018",
+      "finishDate": "03/09/2022",
+      "gpa": "3.83",
+      "location": "Yogyakarta"
+    }
+  ]
+}
