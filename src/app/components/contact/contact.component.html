@@ -1,1 +1,47 @@
-<p>contact works!</p>
+<div class="contact py-8">
+  <div class="mx-auto mb-12 max-w-sm md:max-w-2xl">
+    <h2 class="text-center text-base font-bold text-gray-900 dark:text-slate-100 md:text-3xl lg:text-6xl">
+      {{ "Contact" }}
+    </h2>
+  </div>
+  <div class="mx-auto mb-4 max-w-sm px-6 md:mb-10 md:max-w-4xl lg:px-12">
+    <div>
+      <label for="name"
+        class="block text-sm font-semibold text-gray-900 dark:text-slate-200 md:text-lg lg:text-2xl">Name</label>
+      <div class="mt-2.5">
+        <input type="text" name="name" id="name" [(ngModel)]="name"
+          class="mb-4 block w-full rounded-md border-0 px-3.5 py-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+      </div>
+    </div>
+    <div>
+      <label for="email"
+        class="block text-sm font-semibold text-gray-900 dark:text-slate-200 md:text-lg lg:text-2xl">Email</label>
+      <div class="mt-2.5">
+        <input type="text" name="email" id="email" [(ngModel)]="email"
+          class="mb-4 block w-full rounded-md border-0 px-3.5 py-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+      </div>
+    </div>
+    <div>
+      <label for="subject"
+        class="block text-sm font-semibold text-gray-900 dark:text-slate-200 md:text-lg lg:text-2xl">Subject</label>
+      <div class="mt-2.5">
+        <input type="text" name="subject" id="subject" [(ngModel)]="subject"
+          class="mb-4 block w-full rounded-md border-0 px-3.5 py-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
+      </div>
+    </div>
+    <div>
+      <label for="message"
+        class="block text-sm font-semibold text-gray-900 dark:text-slate-200 md:text-lg lg:text-2xl">Message</label>
+      <div class="mt-2.5">
+        <textarea name="message" id="message" rows="4" [(ngModel)]="message"
+          class="mb-4 block w-full rounded-md border-0 px-3.5 py-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
+      </div>
+    </div>
+    <div class="mt-10">
+      <button type="submit" (click)="sendMessage()"
+        class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+        Send Message
+      </button>
+    </div>
+  </div>
+</div>
